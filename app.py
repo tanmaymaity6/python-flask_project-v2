@@ -23,7 +23,7 @@ JOBS = [
         'id': 4,
         'title': 'Data Engineer',
         'location': 'Madison, USA',
-        'salary': '$150,000'
+        'salary': '$175,000'
     },
 ]
 
