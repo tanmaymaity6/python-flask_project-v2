@@ -27,6 +27,17 @@ def load_jobs_from_db():
   return jobs
 
 
+def load_job_from_db(id):
+  cursor = connection.cursor()
+  cursor.execute(("select * from jobs where id = :val") , val=id)
+  rows=cursor.fetchone()
+  if len(rows) == 0:
+    return None
+  else:
+    return dict(rows[0])
+    
+  
+
 
 # try:  
 #   cursor = connection.cursor()
