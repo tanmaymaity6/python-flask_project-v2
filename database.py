@@ -5,13 +5,15 @@ import os
 
 db_connection_string = os.environ['DB_CONNECTION_STRING']
 timeout=10
+
+
 connection = pymysql.connect(
     charset="utf8mb4",
     connect_timeout=timeout,
     cursorclass=pymysql.cursors.DictCursor,
     db="defaultdb",
     host="tangent-careers-tangent-careers.h.aivencloud.com",
-    password=db_connection_string,
+    password="AVNS_Q9-eBRLHs6VUmnE_eGr",
     read_timeout=timeout,
     port=20931,
     user="avnadmin",
