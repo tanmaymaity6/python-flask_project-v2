@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, text
 from pymysql import cursors
 import pymysql
 
-timeout = 10
+timeout=10
 connection = pymysql.connect(
     charset="utf8mb4",
     connect_timeout=timeout,
