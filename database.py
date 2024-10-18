@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine, text
 from pymysql import cursors
 import pymysql
-import os
 
 timeout = 10
 connection = pymysql.connect(
