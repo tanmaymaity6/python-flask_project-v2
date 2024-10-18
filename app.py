@@ -8,7 +8,6 @@ def hello_tangent():
     jobs = load_jobs_from_db()
     return render_template('home.html', jobs=jobs, company_name='Tangent')
 
-
 @app.route("/api/jobs")
 def list_jobs():
     jobs=load_jobs_from_db()

@@ -1,7 +1,9 @@
 from sqlalchemy import create_engine, text
 from pymysql import cursors
 import pymysql
+import os
 
+db_connection_string = os.environ['DB_CONNECTION_STRING']
 timeout=10
 connection = pymysql.connect(
     charset="utf8mb4",
@@ -9,7 +11,7 @@ connection = pymysql.connect(
     cursorclass=pymysql.cursors.DictCursor,
     db="defaultdb",
     host="tangent-careers-tangent-careers.h.aivencloud.com",
-    password="AVNS_Q9-eBRLHs6VUmnE_eGr",
+    password=db_connection_string,
     read_timeout=timeout,
     port=20931,
     user="avnadmin",
